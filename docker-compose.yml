@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  travellingapp-ui:
+    build: ./TravellingApp.UI
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./TravellingApp.UI:/TravellingApp.UI
+
+  restorantsuggestservice-api:
+    build: ./RestorantSuggestService.API
+    ports:
+      - "3050:3050"
+    volumes:
+      - ./RestorantSuggestService.API:/RestorantSuggestService.API
+      
+  rentcarservice-api:
+    build: ./RentCarService.API
+    ports:
+      - "3060:3060"
+    volumes:
+      - ./RentCarService.API:/RentCarService.API
+      
+  hotelsuggestservice-api:
+    build: ./HotelSuggestService.API
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./HotelSuggestService.API:/HotelSuggestService.API
+
+  monumentservice-api:
+    build: ./MonumentService.API
+    ports:
+      - "8008:8008"
+    volumes:
+      - ./MonumentService.API:/MonumentService.API
