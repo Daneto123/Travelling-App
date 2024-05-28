@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+  }
+  
+  body {
+    background-color: #e5e9ed;
+  }
+  
+  a {
+    /* todo: check if we can apply theme primary.main too all <a> globaly*/
+    color: #359adc;
+    text-decoration: none;
+  }
+
+  
